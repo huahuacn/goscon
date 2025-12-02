@@ -1,7 +1,7 @@
 manager: 127.0.0.1:6620
 #tcp: 0.0.0.0:1248
 #kcp: 0.0.0.0:1248
-ws: 0.0.0.0:1249
+ws: 0.0.0.0:60000
 scp:
   handshake_timeout: 30
   reuse_time: 30
@@ -41,14 +41,12 @@ upstream_option:
 #    prefix: mail.
 #    pattern : google
 hosts:
-  - name: role1
-    addr: 127.0.0.1:7012
+  - name: game1
+    addr: 127.0.0.1:60001
     weight: 100
-  - name: role2
-    addr: 127.0.0.1:7022
+  - name: game2
+    addr: 127.0.0.1:60002
     weight: 100
-  # - name: test2
-  #   addr: 127.0.0.1:11249
-  #   weight: 100
+
 #etcd_host: 127.0.0.1:2379
 #etcd_prefix: /mt2/Devel/UserGate
