@@ -27,5 +27,4 @@ echo "按Ctrl+C停止服务"
 echo "----------------------------------------"
 
 # 启动goscon服务
-# -sproto 0: 启用sproto协议支持,消息类型为0(PTYPE_CLIENT)
-./goscon -logtostderr -v 10 -config config.yaml -sproto 0
+./goscon -logtostderr -v 10 -config config.yaml
